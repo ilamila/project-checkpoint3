@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+	<!-- You do not need to make any changes to this file, but
+	you should still review the tags to make sure that you
+	are familiar with them. -->
+
+<html lang="en">
+<!-- All of the meta data for the page belongs in the header tag -->
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script src="https://kit.fontawesome.com/9358bf4b55.js" crossorigin="anonymous"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2WLH216CS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Q2WLH216CS');
+</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Link to the favicon image -->
+	<link rel="icon" href="images/tabfavi.png">
+	<!-- Link to the reset file -->
+	<link rel="stylesheet" href="css/html5reset.css">
+	<!-- Link to the stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Mediterranean Food</title>
+
+	</head>
+
+<!-- All of the visible code in the page belongs in the body tag -->
+<body>
+	<!-- Header is a sematic tag page that aids readability -->
+	<a class = "skip" href="#main">Skip to Main Content</a>
+	<header>
+		<!-- Nav is a sematic tag page that aids accessibility -->
+		<nav>
+			<ul>
+				<!-- Since I am on the index file I added class = action to the link to index. -->
+
+			<li><a href = "index.html">Healthy Diet</a></li>
+			<li><a href = "desserts.html">Desserts</a></li>
+			<li><a href = "food.html">Food/Meals</a></li>
+			<li><a href = "fooddiversity.html">Diversity</a></li>
+			<li class="active1"><a href = "contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<!-- The h1 is a semantic tag that aids accessibility -->
+		<h1>Contact</h1>
+	</header>
+
+	<!-- Every page should have a main tag for accessibility -->
+	<main id="main">
+		<form>
+			<fieldset>
+			  <legend>Please share some receipes, comments, or questions:</legend>
+		  
+			  <label for="name_id">Your Name</label>
+			  <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+		  
+			  <label for="email_id">Your Email</label>
+			  <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+		  
+			  <label for="phone_id">Your Phone Number</label>
+			  <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			  <div><span>Format: 123-456-7890</span></div>
+		  
+		  
+			  <label for="msg">Leave A Message</label>
+			
+			  <textarea placeholder="Enter your message" id = "msg" name="mesg" required></textarea><br>
+		  
+			  <input type="checkbox" checked="checked" name="remember" id = "cBox"> 
+			  <label for ="cBox">Remember me</label>
+		  
+			  <input type="submit" value = "Send!">
+			</fieldset>
+		   </form>
+
+	<!-- Footer is a sematic tag page that aids readability -->
+	<footer>
+		<p>Ali Ali - Middle Eastern Cuisine</p><i class="fa-solid fa-paper-plane"></i>
+	</footer>
+</body>
+</html>

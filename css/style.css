@@ -4,6 +4,8 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size: 150%;
+	background: #f1f1f1 url("../images/rock.jpg");
+	
 }
 
 /*Make the h1 heading bigger with a bold font*/
@@ -11,8 +13,11 @@ h1{
 	font-size: 2em;
 	font-weight: bold;
 	text-align: center;
+	font-family: 'Indie Flower', cursive;
 }
-
+h2{
+	font-family: 'Indie Flower', cursive;
+}
 .active{
 	background:lightcoral;
     text-transform: uppercase;
@@ -41,6 +46,16 @@ h1{
 	border: 2px solid black;
 }
 .inuse1 a{
+	text-decoration: underline;
+	font-family: fantasy;
+}
+.active1{
+	background:lightcoral;
+    text-transform: uppercase;
+	text-align: center;
+	border: 2px solid black;
+}
+.active1 a{
 	text-decoration: underline;
 	font-family: fantasy;
 }
@@ -105,6 +120,13 @@ header, nav, main, h1, footer{
 	margin: auto;
 	justify-content: space-between;
 }
+
+#wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	justify-content: center;
+}
 /*Change the styling for all of the list
 items in the nav section*/
 nav li{
@@ -124,3 +146,83 @@ nav li{
 /*Added this so the links stay the same color*/
 a:visited{color: black}
 
+/*contact form below*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  form {
+	border: 3px solid #f1f1f1;
+  }
+legend{ 
+	font-size: 125%;
+	font-style:italic;
+	text-transform: uppercase;
+	text-align: center;
+  }
+label{
+  display: inline-block;
+  margin-right:10px;
+  width:15%;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea{
+	width: 100%;
+	height: 35vh;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  span{
+	margin-left:20%;
+	font-family: italic;
+	font-weight: bold;
+  }
+  input[type=submit] {
+	background-color: #38803C;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  input[type=submit]:hover {
+	opacity: 0.8;
+  }
+  
+  
+  
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (min-width: 770px) {
+	form{
+	  width: 80%;
+	  margin: 0 auto;
+	}
+  
+	input{
+	  width:80%;
+	}
+  
+	textarea{
+	  width:80%;
+	  height: 25vh;
+   }
+   
+   div + label{
+	  line-height: 25vh;
+	  vertical-align:top;
+   }
+  }  
