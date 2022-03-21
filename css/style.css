@@ -1,14 +1,13 @@
-/*Add padding and margin to space out the page.
-Make the font larger too.*/
+
 body{
 	margin:1%;
 	padding:1%;
 	font-size: 150%;
 	background: #f1f1f1 url("../images/rock.jpg");
-	
+
 }
 
-/*Make the h1 heading bigger with a bold font*/
+
 h1{
 	font-size: 2em;
 	font-weight: bold;
@@ -70,7 +69,7 @@ h2{
 	text-decoration: underline;
 	font-family: fantasy;
 }
-/*Style the images*/
+
 
 .container img{
     height: auto;
@@ -91,7 +90,7 @@ img:hover{
 	border:dashed lightcoral;
 }
 
-/*Make the h2 heading match h1*/
+
 h2{
 	font-size: 2em;
 	font-weight: bold;
@@ -140,8 +139,7 @@ div p {
     border: 4px solid black;
     border-radius: 10px;
 }
-/*Change the styling for all of the list
-items in the nav section*/
+
 nav li{
 	background-color: #beb8b8;
 	padding:10px;
@@ -150,12 +148,7 @@ nav li{
 	overflow: hidden;
 }
 
-/**figure figcaption {
-    border: 1px solid black;
-	text-align: left; !important
-}**/
 
-/*Added this so the links stay the same color*/
 a:visited{color: black}
 
 #food{
