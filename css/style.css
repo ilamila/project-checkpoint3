@@ -26,7 +26,6 @@ h2{
 
 .active a{
 	text-decoration: underline;
-	font-family: fantasy;
 }
 .inuse{
 	background:lightcoral;
@@ -36,7 +35,6 @@ h2{
 }
 .inuse a{
 	text-decoration: underline;
-	font-family: fantasy;
 }
 .inuse1{
 	background:lightcoral;
@@ -46,7 +44,7 @@ h2{
 }
 .inuse1 a{
 	text-decoration: underline;
-	font-family: fantasy;
+
 }
 .active1{
 	background:lightcoral;
@@ -56,7 +54,6 @@ h2{
 }
 .active1 a{
 	text-decoration: underline;
-	font-family: fantasy;
 }
 
 .inuse2{
@@ -67,7 +64,6 @@ h2{
 }
 .inuse2 a{
 	text-decoration: underline;
-	font-family: fantasy;
 }
 
 
