@@ -240,9 +240,13 @@ input:focus, textarea:focus {
 
 
 .skip{
-	display: none;
+	left: -999px;
+	position: absolute;
+	z-index: -999px;
 }
-
+.skip:focus {
+left:10px;
+}
 
 
 
