@@ -72,6 +72,8 @@ h2{
     width: 90%;
     border: 4px solid black;
     border-radius: 10px;
+	margin:auto;
+	display: block;
 
 }
 img:nth-child(3n+2){
@@ -135,6 +137,8 @@ div p {
     width: 90%;
     border: 4px solid black;
     border-radius: 10px;
+	margin:auto;
+	display: block;
 }
 
 nav li{
@@ -298,13 +302,3 @@ left:10px;
 	0% { width: 0px; opacity: 1;}
 	100% { width: 14px; opacity: 1;}
   }
-  
-  
-  
-
-
-
-
-
-
- 
