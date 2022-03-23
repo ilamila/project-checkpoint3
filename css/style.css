@@ -104,6 +104,7 @@ p, h1, h2 {
 div p{
 	border: 1px solid black;
 	text-align: left !important;
+
 }
 
 header, nav, main, h1, footer{
@@ -146,6 +147,14 @@ nav li{
 	border:1px solid black;
 	display: inline-block;
 	overflow: hidden;
+	width: 40%;
+}
+
+nav ul{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
 }
 
 
@@ -157,64 +166,59 @@ a:visited{color: black}
 }
 @keyframes almymove {
 	from {width: 25px; opacity: 0;}
-	to {width: 380px; opacity: 1;}
+	to {width: 360px; opacity: 1;}
   }
 
 /*contact form below*/
-body {
-	font-family: Arial, Helvetica, sans-serif;
-  }
-
-  form {
-	border: 3px solid #f1f1f1;
-  }
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 200px;
+	color: black;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;		
+	max-width:400px;
+}
 legend{ 
 	font-size: 125%;
 	font-style:italic;
-	text-transform: uppercase;
-	text-align: center;
+	text-align: left;
+	margin-right: 90px;
+    margin-left: 10px;
   }
-label{
-  display: inline-block;
-  margin-right:10px;
-  width:15%;
-}
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+textarea {
+	height: 150px;
+	max-width: 400px;
+	line-height: 18px;
 }
 
-textarea{
-	width: 100%;
-	height: 35vh;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-  }
-  span{
-	margin-left:20%;
-	font-family: italic;
-	font-weight: bold;
-  }
-  input[type=submit] {
-	background-color: #38803C;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
-	cursor: pointer;
-	width: 100%;
-  }
-  
-  input[type=submit]:hover {
-	opacity: 0.8;
-  }
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: #C9C9C9;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;	
+}
+
+.form label {
+	margin-left: 10px;
+	color: black;
+}
+
+/* ===========================
+   ====== Submit Button ====== 
+   =========================== */
+
+.submit input {
+	width: 100px; 
+	height: 40px;
+	background-color: lightcoral; 
+	color: black;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;		
+}
 
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (min-width: 770px) {
@@ -237,3 +241,70 @@ textarea{
 	  vertical-align:top;
    }
   }  
+
+
+.skip{
+	display: none;
+}
+
+
+
+
+
+  svg {
+	width: 256px;
+	height: 256px;
+  }
+  
+  /* SMOKE */
+  #smoke-1 {
+	stroke-dasharray: 0, 10;
+	animation: smoke 6s ease infinite;
+  }
+  
+  #smoke-2 {
+	stroke-dasharray: 0, 10;
+	animation: smoke 6s 0.5s ease infinite;
+  }
+  
+  @keyframes smoke {
+	0% { stroke-dasharray: 0, 10; }
+	50% { stroke-dasharray: 10, 0; }
+	100% { stroke-dasharray: 10, 0; opacity: 0; }
+  }
+  
+  /* WRITING */
+  #line-1 {
+	opacity: 0;
+	animation: writing 0.5s linear forwards;
+  }
+  
+  #line-2 {
+	opacity: 0;
+	animation: writing 0.5s 1s linear forwards;
+  }
+  
+  #line-3 {
+	opacity: 0;
+	animation: writing 0.5s 1.5s linear forwards;
+  }
+  
+  #line-4 {
+	opacity: 0;
+	animation: writing 0.5s 2s linear forwards;
+  }
+  
+  @keyframes writing {
+	0% { width: 0px; opacity: 1;}
+	100% { width: 14px; opacity: 1;}
+  }
+  
+  
+  
+
+
+
+
+
+
+ 
